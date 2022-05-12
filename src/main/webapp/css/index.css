@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+
+.continer {
+    position: relative;
+    border-radius: 10.618px;
+    margin: 30px auto 0px auto;
+    width: 35%;
+    height: 400px;
+    background-color: #323232;
+}
+
+.continer h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.continer h1:hover {
+    color: #78e08f;
+}
+
+.lines {
+    background-color: white;
+    height: 20px;
+    /*margin-bottom: 20px;*/
+}
+
+form {
+    font-size: 1.2em;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-bottom: dashed 4px;
+    padding: 10px;
+}
+
+.content td {
+    margin: 20px auto;
+}
+
+.content td + td {
+    padding: 5px;
+    /*margin: 9px;*/
+    display: flex;
+    border: solid 4px;
+    justify-content: center;
+    /*padding-bottom: 10px;*/
+}
+
+
+.content td span {
+    width: 120px;
+    /*border: solid 1px;*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content td + td input {
+    width: 95%;
+}
+
+.subOrcan {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nor {
+    font-family: Aria;
+    font-size: large;
+    margin-top: 40px;
+    width: 100px;
+}
+
+.nor:hover {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    font-size: small;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*color: rgba(255, 255, 255, 0.8);*/
+    /*z-index: 999999;*/
+    /*margin-bottom: 5px;*/
+    /*position: relative;*/
+}
+
+#username_prompt {
+    position: absolute;
+    top: 75px;
+    left: 43%;
+
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+#password_prompt {
+    position: absolute;
+    top: 155px;
+    left: 43%;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.tips {
+    /*padding: 10px;*/
+    width: 250px;
+    height: 120px;
+    right: -255px;
+    top: 130px;
+    position: absolute;
+    /*border: solid 1px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tips div {
+    /*border:  3px;*/
+    /*height: 10px;*/
+
+}
+
+.userTips {
+    /*display:none;*/
+    display: none;
+    background-color: antiquewhite;
+    border-radius: 13px;
+    /*margin-top: 10px;*/
+}
+
+.userTips span {
+    /*text-align: center;*/
+    font-family: 宋体;
+    font-size: 0.8em;
+    font-size: smaller;
+}
+
+.passTips span {
+    font-family: 宋体;
+    font-size: 0.8em;
+    font-size: smaller;
+}
+
+.passTips {
+    /*display:none;*/
+    display: none;
+    background-color: antiquewhite;
+    /*margin-bottom: 10px;*/
+    border-radius: 13px;
+}
+
+.alink_signIn {
+    margin-top: 10px;
+    /*border: solid 1px darkorange;*/
+    padding-left: 40%;
+}
+
+.alink_signIn p {
+    color: #10ac84;
+}
+
+.alink_signIn a {
+    /*text-decoration: none;*/
+    text-decoration: underline;
+    color: crimson;
+}
+
+
+
+
+
+
+
+

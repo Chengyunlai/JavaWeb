@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <link rel="stylesheet" href="./css/index.css">
+<!--  <script type="text/javascript" src="js/jquery-3.6.0.js"></script>-->
+  <script src="https://cdn.staticfile.org/jquery/1.10.0/jquery.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 50 1440 200">
+  <path fill="#212121" fill-opacity="1"
+        d="M0,160L34.3,165.3C68.6,171,137,181,206,170.7C274.3,160,343,128,411,149.3C480,171,549,245,617,245.3C685.7,245,754,171,823,165.3C891.4,160,960,224,1029,229.3C1097.1,235,1166,181,1234,154.7C1302.9,128,1371,128,1406,128L1440,128L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
+</svg>
+<div class="continer">
+  <h1>Login in</h1>
+  <div class="lines"></div>
+  <form action="login" method="post" class="info" style="position: relative" id="loginform">
+    <table>
+      <tr class="content">
+        <td>
+          <span>UserName:</span>
+        </td>
+        <td>
+          <input id="username" type="text" name="username" placeholder="请输入用户名" required="required">
+        </td>
+        <span id="username_prompt">显示绿色代表合法，红色为非法</span>
+      </tr>
+
+      <tr class="content">
+        <td>
+          <span>PassWord: </span>
+        </td>
+        <td>
+          <input id="password" type="password" name="password" placeholder="请输入密码" required="required">
+        </td>
+      </tr>
+      <span id="password_prompt">显示绿色代表合法，红色为非法</span>
+    </table>
+    <div class="subOrcan">
+      <input id="subm" type="submit" class="nor" value="Submit!">
+      <input id="rese" type="reset" class="nor" value="Reset!">
+    </div>
+  </form>
+  <!--        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#323232" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,176C384,192,480,192,576,181.3C672,171,768,149,864,160C960,171,1056,213,1152,224C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>-->
+  <div class="tips">
+    <div class="userTips" id="userTips">
+      <span>不允许?!_开头与?!.*?_结尾，允许字母、数字、下划线和中文任意个</span>
+    </div>
+    <div class="passTips" id="passTips">
+      <span>最短6位，最长16位,可以包含字母数字下划线和减号</span>
+    </div>
+  </div>
+</div>
+<div class="alink_signIn">
+  <p>If you don't have an account yet,<a href="regist.html">Please click here</a></p>
+</div>
+
+
+<footer>
+  <span>Author：一卒</span>
+  <span>Copyright：一卒</span>
+  <a href="https://github.com/Chengyunlai">Git：Chengyunlai</a>
+</footer>
+</body>
+<script>
+<!-- 编写axios代码 -->
+let form = {
+  username:"",
+  password:""
+}
+document.getElementById("subm").onclick = function (){
+  form.username = document.getElementById("username").value
+  form.password = document.getElementById("username").value
+  console.log("数据" + data)
+  axios({
+    method:"post",
+    url:"http://localhost:8080/JavaWeb/login",
+    data:form
+  }).then(function (res){
+    console.log(res)
+  })
+}
+</script>
+</html>
