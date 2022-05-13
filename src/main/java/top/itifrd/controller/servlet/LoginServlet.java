@@ -22,7 +22,8 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("login的servlet");
+        System.out.println("登录成功");
+
     }
 
     @Override

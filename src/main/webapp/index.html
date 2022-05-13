@@ -17,7 +17,7 @@
 <div class="continer">
   <h1>Login in</h1>
   <div class="lines"></div>
-  <form action="login" method="post" class="info" style="position: relative" id="loginform">
+  <form method="post" class="info" style="position: relative" id="loginform">
     <table>
       <tr class="content">
         <td>
@@ -73,12 +73,14 @@ let form = {
 }
 document.getElementById("subm").onclick = function (){
   form.username = document.getElementById("username").value
-  form.password = document.getElementById("username").value
-  console.log("数据" + data)
+  form.password = document.getElementById("password").value
+  // console.log("数据" + form)
+  let formData = JSON.stringify(form)
+  console.log(formData)
   axios({
     method:"post",
     url:"http://localhost:8080/JavaWeb/login",
-    data:form
+    data:formData
   }).then(function (res){
     console.log(res)
   })

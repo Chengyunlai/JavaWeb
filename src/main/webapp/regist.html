@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>注册</title>
     <!--    base标签，永远固定相对路径跳转结果-->
-<!--    <base href="http://localhost:8080/blogweb/">-->
-    <link rel="stylesheet" href="./css/regist.css">
+<!--    <base href="http://localhost:8080/JavaWeb/">-->
+    <link rel="stylesheet" href="css/regist.css">
     <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="js/regist.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1440 200">
@@ -17,7 +18,7 @@
 <div class="continer">
     <h1>Sign in</h1>
     <div class="lines"></div>
-    <form action="regist" method="post" class="info" style="position: relative">
+    <form method="post" class="info" style="position: relative">
         <table>
             <tr class="content">
                 <td>
@@ -66,5 +67,25 @@
 </footer>
 </body>
 <!-- 编写axios代码 -->
-
+<script>
+    <!-- 编写axios代码 -->
+    let form = {
+        username:"",
+        password:""
+    }
+    document.getElementById("subm").onclick = function (){
+        form.username = document.getElementById("username").value
+        form.password = document.getElementById("password").value
+        // console.log("数据" + form)
+        let formData = JSON.stringify(form)
+        console.log(formData)
+        axios({
+            method:"post",
+            url:"http://localhost:8080/JavaWeb/regist",
+            data:formData
+        }).then(function (res){
+            console.log(res)
+        })
+    }
+</script>
 </html>
