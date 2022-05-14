@@ -1,9 +1,10 @@
 package top.itifrd.utils.test;
-import com.mysql.jdbc.Connection;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import top.itifrd.pojo.Book;
+import top.itifrd.utils.DruidUtils;
 import top.itifrd.utils.JDBCUtils;
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -16,11 +17,10 @@ import java.sql.SQLException;
  * @Version 1.0
  **/
 @Slf4j
-public class JDBCUtilsTest {
-    Connection connection = null;
-
+public class DruidUtilsTest {
+    private Connection connection = null;
     /**
-     * @Description: 测试获取连接，若成功打印出连接对象
+     * @Description: 测试使用Druid作为数据源获取连接
      * @Param: []
      * @return: void
      * @Author: chengyunlai
@@ -28,8 +28,11 @@ public class JDBCUtilsTest {
      */
     @Test
     public void getConnection() {
-        connection = JDBCUtils.getConnection();
-        System.out.println(connection);
+        connection= DruidUtils.getConnection();
+        if (connection != null){
+            log.info("初始化成功:" + connection);
+        }
+        JDBCUtils.closeConnection(connection);
     }
 
     /**
@@ -154,7 +157,7 @@ public class JDBCUtilsTest {
             connection.setAutoCommit(false);
             preparedStatement = connection.prepareStatement(sql);
             // 将增加操作的数据删除
-            preparedStatement.setString(1,"2");
+            preparedStatement.setString(1,"3");
             // 执行操作
             int i = preparedStatement.executeUpdate();
             log.info("操作成功影响行数:" + i);

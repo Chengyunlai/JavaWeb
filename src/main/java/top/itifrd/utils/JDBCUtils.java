@@ -1,10 +1,9 @@
 package top.itifrd.utils;
 
 import com.mysql.jdbc.Connection;
-
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
+
 
 /**
  * @ClassName
@@ -17,7 +16,8 @@ public class JDBCUtils {
     public static Connection connection = null;
 
     static {
-        String url = "jdbc:mysql://127.0.0.1:3306/chengyunlaidb?useSSL=false";
+        // 解决中文乱码
+        String url = "jdbc:mysql://127.0.0.1:3306/chengyunlaidb?useSSL=false&Unicode=true&characterEncoding=utf8";
         String username = "root";
         String password = "root";
         try {
@@ -41,7 +41,7 @@ public class JDBCUtils {
         }
     }
 
-    public static void closeConnection(Connection connection){
+    public static void closeConnection(java.sql.Connection connection){
         try {
             connection.close();
         } catch (SQLException throwables) {

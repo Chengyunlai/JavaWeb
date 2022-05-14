@@ -9,30 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/druid.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/utils/FilterUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/listener/ServletListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/JDBCUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/test/JDBCUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="完善JavaWeb基础，加入JDBC">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fe697494-a87b-4e8a-a5d9-13e58cf3fdab.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fe697494-a87b-4e8a-a5d9-13e58cf3fdab/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fe697494-a87b-4e8a-a5d9-13e58cf3fdab/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fe697494-a87b-4e8a-a5d9-13e58cf3fdab/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fe697494-a87b-4e8a-a5d9-13e58cf3fdab/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DbUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DruidUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/test/DbUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/test/DruidUtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FilterDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyServletContextListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ServletDemo1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/controller/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/controller/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/controller/servlet/RegistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/controller/servlet/RegistServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/LoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/RegistFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/RegistFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/druid.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/regist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/JDBCUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/test/JDBCUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/test/JDBCUtilsTest.java" afterDir="false" />
     </list>
     <list id="34dee635-99f5-44df-82fb-93a0feba97b9" name="releaseFunction" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/RegistFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/RegistFilter.java" afterDir="false" />
@@ -46,8 +39,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -61,16 +54,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/top/itifrd/filter/RegistFilter.java">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="8" changelist="1c612173-4139-405b-b055-02b098d30701" />
-        <range start1="4" end1="4" start2="10" end2="12" changelist="1c612173-4139-405b-b055-02b098d30701" />
-        <range start1="14" end1="14" start2="22" end2="23" changelist="1c612173-4139-405b-b055-02b098d30701" />
-        <range start1="22" end1="22" start2="31" end2="69" changelist="34dee635-99f5-44df-82fb-93a0feba97b9" />
-      </ranges>
-    </file>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -117,22 +100,25 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="top.itifrd.utils.test" />
       <recent name="top.itifrd.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JDBCUtilsTest.selectAll">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DbUtilsTest.selectAllData">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCUtilsTest.getConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DbUtilsTest.addData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
@@ -141,14 +127,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="top.itifrd.utils.test" />
-      <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.JDBCUtilsTest" />
-      <option name="METHOD_NAME" value="getConnection" />
+      <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.DbUtilsTest" />
+      <option name="METHOD_NAME" value="addData" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCUtilsTest.selectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DbUtilsTest.deleteData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
@@ -157,7 +143,55 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="top.itifrd.utils.test" />
-      <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.JDBCUtilsTest" />
+      <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.DbUtilsTest" />
+      <option name="METHOD_NAME" value="deleteData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DbUtilsTest.selectAllData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.itifrd.utils.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.itifrd.utils.test" />
+      <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.DbUtilsTest" />
+      <option name="METHOD_NAME" value="selectAllData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DbUtilsTest.updateData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.itifrd.utils.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.itifrd.utils.test" />
+      <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.DbUtilsTest" />
+      <option name="METHOD_NAME" value="updateData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DruidUtilsTest.selectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.itifrd.utils.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.itifrd.utils.test" />
+      <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.DruidUtilsTest" />
       <option name="METHOD_NAME" value="selectAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -254,13 +288,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
-      <item itemvalue="JUnit.JDBCUtilsTest.getConnection" />
-      <item itemvalue="JUnit.JDBCUtilsTest.selectAll" />
+      <item itemvalue="JUnit.DruidUtilsTest.selectAll" />
+      <item itemvalue="JUnit.DbUtilsTest.addData" />
+      <item itemvalue="JUnit.DbUtilsTest.deleteData" />
+      <item itemvalue="JUnit.DbUtilsTest.updateData" />
+      <item itemvalue="JUnit.DbUtilsTest.selectAllData" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JDBCUtilsTest.selectAll" />
-        <item itemvalue="JUnit.JDBCUtilsTest.getConnection" />
+        <item itemvalue="JUnit.DbUtilsTest.selectAllData" />
+        <item itemvalue="JUnit.DruidUtilsTest.selectAll" />
+        <item itemvalue="JUnit.DbUtilsTest.updateData" />
+        <item itemvalue="JUnit.DbUtilsTest.deleteData" />
+        <item itemvalue="JUnit.DbUtilsTest.addData" />
       </list>
     </recent_temporary>
   </component>
@@ -275,8 +315,17 @@
       <updated>1652344152166</updated>
       <workItem from="1652344153744" duration="11338000" />
       <workItem from="1652402331921" duration="1984000" />
-      <workItem from="1652404340608" duration="24958000" />
+      <workItem from="1652404340608" duration="25900000" />
+      <workItem from="1652489177972" duration="11812000" />
     </task>
+    <task id="LOCAL-00001" summary="完善JavaWeb基础，加入JDBC">
+      <created>1652447413784</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652447413784</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,5 +342,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="完善JavaWeb基础，加入JDBC" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善JavaWeb基础，加入JDBC" />
   </component>
 </project>
