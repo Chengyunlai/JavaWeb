@@ -78,8 +78,9 @@ table {
 .nor {
     font-family: Aria;
     font-size: large;
-    margin-top: 40px;
+    margin-top: 10px;
     width: 100px;
+    margin-bottom: 10px;
 }
 
 .nor:hover {

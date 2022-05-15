@@ -13,7 +13,7 @@ body {
     border-radius: 10.618px;
     margin: 30px auto 0px auto;
     width: 35%;
-    height: 400px;
+    /*height: 400px;*/
     background-color: #323232;
 }
 
@@ -78,8 +78,9 @@ table {
 .nor {
     font-family: Aria;
     font-size: large;
-    margin-top: 40px;
+    margin-top: 10px;
     width: 100px;
+    margin-bottom: 10px;
 }
 
 .nor:hover {

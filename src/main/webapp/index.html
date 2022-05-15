@@ -36,8 +36,19 @@
         <td>
           <input id="password" type="password" name="password" placeholder="请输入密码" required="required">
         </td>
+        <span id="password_prompt">显示绿色代表合法，红色为非法</span>
       </tr>
-      <span id="password_prompt">显示绿色代表合法，红色为非法</span>
+
+
+      <tr class="content">
+        <td>
+          <span>记住我: </span>
+        </td>
+        <td>
+          <input id="remember" type="checkbox" name="remember" placeholder="请输入密码" value="1">
+        </td>
+      </tr>
+
     </table>
     <div class="subOrcan">
       <input id="subm" type="submit" class="nor" value="Submit!">
@@ -69,11 +80,13 @@
 <!-- 编写axios代码 -->
 let form = {
   username:"",
-  password:""
+  password:"",
+  remember:""
 }
 document.getElementById("subm").onclick = function (){
   form.username = document.getElementById("username").value
   form.password = document.getElementById("password").value
+  form.remember = document.getElementById("remember").value
   // console.log("数据" + form)
   let formData = JSON.stringify(form)
   console.log(formData)
