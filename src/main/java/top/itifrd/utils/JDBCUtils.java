@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 /**
  * @ClassName
- * @Description
+ * @Description 未使用Druid作为数据源的原生JDBC操作
  * @Author:chengyunlai
  * @Date
  * @Version 1.0

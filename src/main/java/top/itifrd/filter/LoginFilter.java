@@ -3,15 +3,20 @@ package top.itifrd.filter;
 import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import top.itifrd.filter.utils.FilterUtils;
+import top.itifrd.pojo.User;
+import top.itifrd.utils.DbUtils;
+import top.itifrd.utils.DruidUtils;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.sql.Connection;
 
 /**
  * @ClassName
- * @Description
+ * @Description 判断客户端发送的 cookie 以及 服务器的Session 做免密登录，若有一个不匹配则从数据库中进行查询
  * @Author:chengyunlai
  * @Date
  * @Version 1.0
@@ -54,23 +59,15 @@ public class LoginFilter implements Filter {
         String password = jsonObject.getString("password");
         log.info("拦截到表单的姓名" + username);
         log.info("拦截到表单的密码" + password);
-        // 校验用户名和密码是否符合规范
-        JSONObject users = (JSONObject) servletContext.getAttribute("users");
-        if (users == null){
-            System.out.println("未注册");
-            // 若用户未登录则转到登录界面
+        Connection connection = DruidUtils.getConnection();
+        String sql =  "select * from user where (user_name=? and password=?)";
+        User oneByCondition = DbUtils.getOneByCondition(User.class, sql, connection, username, password);
+        if (oneByCondition != null){
+            // 放行到LoginServlet中给客户端发放cookie，服务器存session
+            filterChain.doFilter(servletRequest,servletResponse);
         }else {
-            String contextUsername = users.getString("username");
-            String contextPassword = users.getString("password");
-            log.info("servletContext中的username:" + contextUsername);
-            log.info("servletContext中的password:" + contextPassword);
-            if(username.equals(contextUsername) && password.equals(contextPassword)){
-                filterChain.doFilter(servletRequest,servletResponse);
-            }else {
-                log.info("用户名或者密码错误");
-            }
+            log.error("拦截反馈:用户名或者密码错误");
         }
-
         // filterChain.doFilter(servletRequest,servletResponse);
     }
 

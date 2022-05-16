@@ -24,4 +24,6 @@ public class User {
     private String user_name;
     private Integer age;
     private String description;
+    @NotNull(message = "密码不能为空")
+    private String password;
 }

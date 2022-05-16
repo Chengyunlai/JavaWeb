@@ -33,7 +33,7 @@ public class DbUtils {
     }
 
     /**
-     * @Description: 通用的查询
+     * @Description: 通用的查询全部字段
      * @Param: []
      * @return: java.util.ArrayList<E>
      * @Author: chengyunlai
@@ -68,6 +68,43 @@ public class DbUtils {
                 arrayList.add(e);
             }
             return arrayList;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static <E> E getOneByCondition(Class<E> clazz,String sql,Connection connection,Object ...args){
+        // ArrayList<E> arrayList = new ArrayList<>();
+        try {
+            // 通过反射得到实例对象
+            E e = clazz.newInstance();
+            preparedStatement = DbUtils.getPreparedStatement(sql, connection);
+            // 条件查询注入
+            DbUtils.addPreparedStatementAgrs(preparedStatement,args);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            // 获取表的结构
+            ResultSetMetaData metaData = resultSet.getMetaData();
+            // 获取数据的行数
+            // 获取数据的字段数
+            int columnCount = metaData.getColumnCount();
+            while (resultSet.next()){
+                // 每行对象封装
+                for (int i = 1; i <= columnCount; i++) {
+                    // 获取列名
+                    String columnName = metaData.getColumnName(i);
+                    // 通过列名获取元素
+                    Object object = resultSet.getObject(columnName);
+                    // 通过反射获取该类的属性
+                    Field field = clazz.getDeclaredField(columnName);
+                    // 给属性注入内容，需要先开启Set
+                    field.setAccessible(true);
+                    // 注入内容
+                    field.set(e,object);
+                }
+                return e;
+            }
+            return null;
         } catch (Exception e) {
             e.printStackTrace();
         }

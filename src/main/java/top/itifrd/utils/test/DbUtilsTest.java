@@ -4,6 +4,7 @@ import top.itifrd.pojo.Book;
 import top.itifrd.pojo.User;
 import top.itifrd.utils.DbUtils;
 
+import javax.jws.soap.SOAPBinding;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -59,5 +60,18 @@ public class DbUtilsTest {
         Connection connection = DbUtils.getMySqlConnection();
         ArrayList<User> all = DbUtils.getAll(User.class,sql, connection);
         System.out.println(all);
+    }
+
+    @Test
+    public void getOneByCondition() {
+        Connection connection = DbUtils.getMySqlConnection();
+        String sql = "select * from user where (user_name=? and password=?)";
+        User user = DbUtils.getOneByCondition(User.class, sql, connection, "cengyunlai", "123456");
+        if (user!=null){
+            System.out.println(true);
+        }
+        else {
+            System.out.println(false);
+        }
     }
 }

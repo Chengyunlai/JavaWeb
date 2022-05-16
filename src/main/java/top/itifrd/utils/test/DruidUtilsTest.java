@@ -173,4 +173,11 @@ public class DruidUtilsTest {
         }
     }
 
+    @Test
+    public void getPath(){
+        System.out.println(this.getClass().getResource("/"));
+        System.out.println(System.getProperty("user.dir"));
+        System.out.println(System.getProperty("java.class.path"));
+    }
+
 }

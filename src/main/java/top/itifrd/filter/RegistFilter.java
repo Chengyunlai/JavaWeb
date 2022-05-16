@@ -19,7 +19,7 @@ import java.io.IOException;
  * @Date
  * @Version 1.0
  **/
-@WebFilter("/regist")
+// @WebFilter("/regist")
 @Slf4j
 public class RegistFilter implements Filter {
     @Override
@@ -29,7 +29,8 @@ public class RegistFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-
+        System.out.println("数据过滤处理");
+        filterChain.doFilter(servletRequest,servletResponse);
     }
 
     @Override

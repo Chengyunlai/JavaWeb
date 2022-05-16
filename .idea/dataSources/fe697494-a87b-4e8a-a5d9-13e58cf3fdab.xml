@@ -1071,7 +1071,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_general_ci</Collation>
     </column>
-    <column id="295" parent="244" name="age">
+    <column id="295" parent="244" name="password">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
     </column>
@@ -1080,67 +1080,71 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_general_ci</Collation>
     </column>
-    <key id="297" parent="244" name="PRIMARY">
+    <column id="297" parent="244" name="age">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+    </column>
+    <key id="298" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="298" parent="245" name="user_sign_id">
+    <column id="299" parent="245" name="user_sign_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="299" parent="245" name="role_of_user_id">
+    <column id="300" parent="245" name="role_of_user_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="300" parent="245" name="user_sign_id">
+    <index id="301" parent="245" name="user_sign_id">
       <ColNames>user_sign_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="301" parent="245" name="role_of_user_id">
+    <index id="302" parent="245" name="role_of_user_id">
       <ColNames>role_of_user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="302" parent="245" name="user_role_connect_ibfk_1">
+    <foreign-key id="303" parent="245" name="user_role_connect_ibfk_1">
       <ColNames>user_sign_id</ColNames>
       <RefTableName>user_sign</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="303" parent="245" name="user_role_connect_ibfk_2">
+    <foreign-key id="304" parent="245" name="user_role_connect_ibfk_2">
       <ColNames>role_of_user_id</ColNames>
       <RefTableName>role_of_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="304" parent="246" name="id">
+    <column id="305" parent="246" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="305" parent="246" name="user_username">
+    <column id="306" parent="246" name="user_username">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="306" parent="246" name="user_password">
+    <column id="307" parent="246" name="user_password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="307" parent="246" name="user_username_UNIQUE">
+    <index id="308" parent="246" name="user_username_UNIQUE">
       <ColNames>user_username</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="308" parent="246" name="PRIMARY">
+    <key id="309" parent="246" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="309" parent="246" name="user_username_UNIQUE">
+    <key id="310" parent="246" name="user_username_UNIQUE">
       <ColNames>user_username</ColNames>
       <UnderlyingIndexName>user_username_UNIQUE</UnderlyingIndexName>
     </key>
