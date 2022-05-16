@@ -9,19 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="注册持久化，登录数据库联动">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/res/R.java" afterDir="false" />
+    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="封装JDBC">
+      <change afterPath="$PROJECT_DIR$/img/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/img_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_14_13_57__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_14_13_57__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_15_19_01__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_15_19_01__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/controller/servlet/RegistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/controller/servlet/RegistServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/RegistFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/RegistFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/utils/FilterUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/utils/FilterUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DruidUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DruidUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/regist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/regist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/regist.html" afterDir="false" />
     </list>
     <list id="34dee635-99f5-44df-82fb-93a0feba97b9" name="releaseFunction" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +52,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="293aJ9pt6tO9XBZkZeoofdfQSo5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -90,11 +87,11 @@
       <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\src\main\java\top\itifrd" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Zhangxy\Desktop\JavaWeb\JavaWeb\img" />
+      <recent name="C:\Users\Zhangxy\Desktop\JavaWeb\JavaWeb" />
       <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\src\main" />
       <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\src\main\webapp" />
       <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\src\main\resources" />
-      <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\src\main\java\top\itifrd" />
-      <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\src\main\java" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -105,15 +102,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.50">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
