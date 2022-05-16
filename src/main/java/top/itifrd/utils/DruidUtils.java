@@ -3,6 +3,7 @@ package top.itifrd.utils;
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 import com.mysql.jdbc.log.Log;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.io.Resources;
 
 import javax.sql.DataSource;
 import java.io.FileInputStream;
@@ -27,8 +28,11 @@ public class DruidUtils {
         Properties prop = new Properties();
         InputStream instream = null;
         try {
+            instream = Resources.getResourceAsStream("resources/druid.properties");
+            Boolean flag = (instream == null);
+            log.error("使用Resources得到的instream为空:" + flag);
             ClassLoader classLoader = DruidUtils.class.getClassLoader();
-            instream = classLoader.getSystemResourceAsStream("resources/druid.properties");
+            // instream = classLoader.getSystemResourceAsStream("resources/druid.properties");
             if (instream == null){
                 log.info("未读取到druid.properties文件，系统自定义Druid设置");
                 prop.setProperty("driverClassName","com.mysql.jdbc.Driver");

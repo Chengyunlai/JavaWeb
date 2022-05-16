@@ -18,7 +18,7 @@
 <div class="continer">
     <h1>Sign in</h1>
     <div class="lines"></div>
-    <form method="post" class="info" style="position: relative">
+    <form method="post" class="info" style="position: relative" onsubmit="return false;">
         <table>
             <tr class="content">
                 <td>
@@ -51,7 +51,7 @@
             </tr>
         </table>
         <div class="subOrcan">
-            <input id="subm" type="submit" class="nor" value="Submit!">
+            <button id="subm" type="button" class="nor" value="Submit!"></button>
             <input id="rese" type="reset" class="nor" value="Reset!">
         </div>
     </form>
@@ -94,9 +94,19 @@
         axios({
             method:"post",
             url:"http://localhost:8080/JavaWeb/regist",
-            data:formData
+            data:formData,
+            heads:{
+                "Content-Type":'application/json;charset=UTF-8'
+            }
         }).then(function (res){
-            console.log(res)
+            console.log(res.data.flag)
+            if (res.data.flag){
+                // 原生JS的一个URL地址替换
+                window.location.replace("http://localhost:8080/JavaWeb");
+            }else {
+                $("#username").val('');
+                $("#password").val('');
+            }
         })
     }
 </script>

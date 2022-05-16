@@ -15,16 +15,19 @@ import java.io.BufferedReader;
 public class FilterUtils {
     public static JSONObject formDataToJSONObject(BufferedReader formData){
         System.out.println("接收到表单数据:" + formData);
-        String result = null;
+        // String result = null;
         JSONObject jsonObject = null;
+        // 接收来自前端发送来的数据
+        StringBuilder sb = new StringBuilder();
         try {
-            result = formData.readLine();
-            System.out.println("拦截到数据:"+ result);
-
+            String res = null;
+            while ((res = formData.readLine())!= null){
+                sb.append(res);
+            }
         }catch (Exception e){
             e.printStackTrace();
         }
-        jsonObject = JSON.parseObject(result);
+        jsonObject = JSON.parseObject(sb.toString());
         return jsonObject;
     }
 }

@@ -83,10 +83,10 @@ $(function () {
 
     $("#rese").click(function () {
         // alert("重置被点击");
+        $("#username").val('');
+        $("#password").val('');
         $("#password_prompt").css("color", "white");
         $("#username_prompt").css("color", "white");
-        $("#username").reset();
-        $("#password").reset();
 
     })
 

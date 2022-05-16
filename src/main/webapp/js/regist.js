@@ -63,6 +63,8 @@ $(function () {
 
     //
     $("#subm").click(function () {
+        // 取消默认行为
+        return false;
         // alert("提交被点击");
         var pass = $("#password").val();
         var user = $("#username").val();
@@ -83,11 +85,10 @@ $(function () {
 
     $("#rese").click(function () {
         // alert("重置被点击");
+        $("#username").val('');
+        $("#password").val('');
         $("#password_prompt").css("color", "white");
         $("#username_prompt").css("color", "white");
-        $("#username").reset();
-        $("#password").reset();
-
     })
 
 })

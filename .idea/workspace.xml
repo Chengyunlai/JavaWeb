@@ -9,23 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="一点点修改，预做持久化登录">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fe697494-a87b-4e8a-a5d9-13e58cf3fdab.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fe697494-a87b-4e8a-a5d9-13e58cf3fdab.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="注册持久化，登录数据库联动">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/res/R.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/controller/servlet/RegistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/controller/servlet/RegistServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/LoginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/RegistFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/RegistFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DbUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DbUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/utils/FilterUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/utils/FilterUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DruidUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DruidUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/JDBCUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/test/DbUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/test/DbUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/test/DruidUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/test/DruidUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/regist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/regist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/regist.html" afterDir="false" />
     </list>
     <list id="34dee635-99f5-44df-82fb-93a0feba97b9" name="releaseFunction" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -109,13 +105,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.50">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -292,8 +290,8 @@
       <item itemvalue="JUnit.DruidUtilsTest.getConnection" />
       <item itemvalue="JUnit.DruidUtilsTest" />
       <item itemvalue="JUnit.DbUtilsTest.getMySqlConnection" />
-      <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
       <item itemvalue="JUnit.DbUtilsTest.getOneByCondition" />
+      <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
     </list>
     <recent_temporary>
       <list>
@@ -321,7 +319,8 @@
       <workItem from="1652660250362" duration="9677000" />
       <workItem from="1652670100850" duration="3225000" />
       <workItem from="1652675994284" duration="520000" />
-      <workItem from="1652676533624" duration="4248000" />
+      <workItem from="1652676533624" duration="8754000" />
+      <workItem from="1652694595930" duration="9035000" />
     </task>
     <task id="LOCAL-00001" summary="完善JavaWeb基础，加入JDBC">
       <created>1652447413784</created>
@@ -337,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652617758796</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="注册持久化，登录数据库联动">
+      <created>1652681705743</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652681705743</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +364,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完善JavaWeb基础，加入JDBC" />
     <MESSAGE value="一点点修改，预做持久化登录" />
-    <option name="LAST_COMMIT_MESSAGE" value="一点点修改，预做持久化登录" />
+    <MESSAGE value="注册持久化，登录数据库联动" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册持久化，登录数据库联动" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JavaWeb$Tomcat_8_0_50.ic" NAME="Tomcat 8.0.50 Coverage Results" MODIFIED="1652677957510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
