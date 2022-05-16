@@ -9,16 +9,16 @@
 ***
 ## 项目构建
 1. 你要先这样
-![img_1.png](img/img_1.png)
+![img_1.png](https://github.com/Chengyunlai/JavaWeb/tree/master/img/img_1.png)
 2. 然后再这样
-![img_1.png](img/img.png)
+![img_1.png](https://github.com/Chengyunlai/JavaWeb/tree/master/img/img.png)
 3. 最后要这样
-![img_2.png](img/img_2.png)
+![img_2.png](https://github.com/Chengyunlai/JavaWeb/tree/master/img/img_2.png)
    
 这样的项目内置Tomcat服务器，java的代码和前端的代码都包含在这个工程中，运行时打包成war包即可
 ***
 ## 目录结构
-![img.png](img/img_3.png)
+![img.png](https://github.com/Chengyunlai/JavaWeb/tree/master/img/img_3.png)
 ***
 ## Maven
 Maven最直观的一点就是做到了jar包管理，所以你想使用任何第三方的技术，又不想去网上搜各种jar包自己下载，在Maven工程中，修改**pom.xml**即可
