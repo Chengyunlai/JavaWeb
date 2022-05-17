@@ -3,6 +3,8 @@
 ***
 > 前言
 >
+> > 个人文档版权©，转载和引用请附带作者链接
+> 
 >> 这个文档希望可以帮助你了解JavaWeb的开发的基础流程，然后再慢慢往**高级框架篇**
 >
 >> 使用空工程和Jar包导入，手动打包管理项目是一件麻烦的事，你需要Maven帮助你管理项目。
@@ -11,6 +13,7 @@
 >
 >> 这个文档适合懂一点Maven知识，懂一点JavaSE，懂一点接口开发思想，懂一点MVC思想，懂一点HTTP
 ***
+
 ## 项目构建
 1. 你要先这样
    ![img_1.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5b1654ff926a4fc8824b92fbb53fffdd~tplv-k3u1fbpfcp-zoom-1.image)
@@ -68,6 +71,8 @@ axios是基于Ajax技术的封装，正是因为有它开启了前后端分离
 
 ## 前端数据想发送给后端，或者我在网页端如何向一个服务器发请求？
 ### 技术要点 Axios
+> Axios可以实现前端向后端的网络请求
+
 官网地址:`https://www.axios-http.cn/`
 
 #### 安装方式一 : 常用在前端框架工程:
@@ -80,17 +85,17 @@ HTML代码中的添加JavaScript代码链接以下内容:
 * 补充:CDN网站:`http://staticfile.org/`
 
 #### 使用
-作者喜欢的写法
+#####作者喜欢的写法
 ```javascript
 axios({配置}).then(res=>{res是相应的内容})
 
 配置详见下面 : 请求配置
 ```
-例子:
+#####例子:
 ```javascript
 axios({
   method: 'post',
-  url: 'http://localhost:8080/JavaWeb/login',
+  url: 'http://www.chengyunlai.top/JavaWeb/login',
   responseType: 'json'
 }).then(res=>{
     if(res.data.falg == true){
@@ -105,7 +110,7 @@ responseType:表示浏览器将要响应的数据类型
 res:服务器响应的内容
 ```
 
-写法二 : 请求方式别名
+#####写法二 : 请求方式别名
 ```markdown
 axios.request(config)
 axios.get(url[, config])
@@ -117,7 +122,7 @@ axios.put(url[, data[, config]])
 axios.patch(url[, data[, config]])
 ```
 
-请求配置
+####请求配置
 ```javascript
 {
   // `url` 是用于请求的服务器 URL
@@ -281,8 +286,13 @@ axios.patch(url[, data[, config]])
 
 }
 ```
+
+***
+
 ### 技术要点 Servlet
-包配置
+> Servlet运行在 Web 服务器或应用服务器上的程序;可以读取来自浏览器发送的表单数据或者访问请求,根据请求做相应的逻辑处理后再响应到客户端浏览器
+
+####包配置
 ```xml
 <dependency>
     <groupId>javax.servlet</groupId>
@@ -290,7 +300,7 @@ axios.patch(url[, data[, config]])
     <version>3.1.0</version>
 </dependency>  
 ```
-代码
+####代码
 ```java
 package top.itifrd.controller.servlet;
 
@@ -325,7 +335,23 @@ public class LoginServlet extends HttpServlet {
     }
 }
 ```
-假设服务器地址:`http://www.chengyunlai.top`
+假设服务器地址:`http://www.chengyunlai.top/JavaWeb/`
 
-当你在浏览器输入:`http://www.chengyunlai.top/login` 就表示向服务器发送了一个get请求，而在上述代码中`@WebServlet("/login")` 会匹配到`/login`处理该请求，执行doGet方法
+JavaWeb因为是web工程，页面也在工程中，所以访问JavaWeb时自动定位到webapp根目录
+
+当你在浏览器输入:`http://www.chengyunlai.top/JavaWeb/login` 就表示向服务器发送了一个get请求，而在上述代码中`@WebServlet("/login")` 会匹配到`/login`处理该请求，执行doGet方法
+
 ***
+
+### 技术要点 Json
+> Json作为数据传输的一种方式,是 是存储和交换文本信息的语法
+####示例
+```json
+{
+    "username":"chengyunlai",
+    "password": "root"
+}
+```
+都是以键值的方式表示，注意都要用括号包围起来
+
+####使用
