@@ -1,6 +1,10 @@
 # JavaWeb
+[Git代码](https://github.com/Chengyunlai/JavaWeb)
 ***
 > 前言
+>
+>> 这个文档希望可以帮助你了解JavaWeb的开发的基础流程，然后再慢慢往**高级框架篇**
+>
 >> 使用空工程和Jar包导入，手动打包管理项目是一件麻烦的事，你需要Maven帮助你管理项目。
 >
 >> 见过太多纯文本或者只有内嵌代码块的经验分享，还是MD最友好，所以写技术分享还是用MD吧。
@@ -9,16 +13,16 @@
 ***
 ## 项目构建
 1. 你要先这样
-![img_1.png](https://www.itifrd.top/home/img/mdImg/img_1.png)
+   ![img_1.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5b1654ff926a4fc8824b92fbb53fffdd~tplv-k3u1fbpfcp-zoom-1.image)
 2. 然后再这样
-![img_1.png](https://www.itifrd.top/home/img/mdImg/img.png)
+   ![img_1.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ece9a8172f4941b2af76bbd9b29a438a~tplv-k3u1fbpfcp-zoom-1.image)
 3. 最后要这样
-![img_2.png](https://www.itifrd.top/home/img/mdImg/img_2.png)
-   
+   ![img_2.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/be26be9f09064a2f9a6680e8217554f4~tplv-k3u1fbpfcp-zoom-1.image)
+
 这样的项目内置Tomcat服务器，java的代码和前端的代码都包含在这个工程中，运行时打包成war包即可
 ***
 ## 目录结构
-![img.png](https://www.itifrd.top/home/img/mdImg/img_3.png)
+![img.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/24c24fb2a6774e6ab9e0f06b8144c20d~tplv-k3u1fbpfcp-zoom-1.image)
 ***
 ## Maven
 Maven最直观的一点就是做到了jar包管理，所以你想使用任何第三方的技术，又不想去网上搜各种jar包自己下载，在Maven工程中，修改**pom.xml**即可
@@ -54,8 +58,8 @@ axios是基于Ajax技术的封装，正是因为有它开启了前后端分离
 ## 后端开发的思想 :
 开发东西，我们会先从**外向内看**:
 
-- [x] 🥰它得会动，长得好看 
-  
+- [x] 🥰它得会动，长得好看
+
 - [ ] 🚫然后才会去思考如何去开发
 
 所以我基于这种思想展开来分享一下JavaWeb使用的技术栈。
@@ -98,13 +102,13 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("登录成功");
+        System.out.println("处理Post请求");
 
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("doGet");
+        System.out.println("处理Get请求");
     }
 }
 ```
@@ -112,12 +116,3 @@ public class LoginServlet extends HttpServlet {
 
 当你在浏览器输入:`http://www.chengyunlai.top/login` 就表示向服务器发送了一个get请求，而在上述代码中`@WebServlet("/login")` 会匹配到`/login`处理该请求，执行doGet方法
 ***
-<i>前言:使用空项目导JAR包的开发方式不再可取，你需要基于Maven的工程,</i>
-<h2>Servlet技术</h2>
-<p></p>
-
-
-
-
-
-
