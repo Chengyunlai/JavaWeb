@@ -1,5 +1,6 @@
 package top.itifrd.utils;
 
+import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 import com.mysql.jdbc.log.Log;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +22,7 @@ import java.util.Properties;
  **/
 @Slf4j
 public class DruidUtils {
-    private static DataSource dataSource = null;
+    private static DruidDataSource dataSource = null;
     private static Connection connection = null;
     // 在静态代码块中初始化参数
     static {
@@ -46,11 +47,16 @@ public class DruidUtils {
                 log.info("读取到druid.properties文件");
                 prop.load(instream);
             }
-            dataSource = DruidDataSourceFactory.createDataSource(prop);
+            dataSource = (DruidDataSource) DruidDataSourceFactory.createDataSource(prop);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+    public static DruidDataSource getDataSource(){
+        return dataSource;
+    }
+
     public static Connection getConnection(){
         try {
             // 从数据池中获取连接

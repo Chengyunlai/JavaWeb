@@ -59,14 +59,18 @@ public class LoginFilter implements Filter {
         String password = jsonObject.getString("password");
         log.info("拦截到表单的姓名" + username);
         log.info("拦截到表单的密码" + password);
-        Connection connection = DruidUtils.getConnection();
-        String sql =  "select * from user where (user_name=? and password=?)";
-        User oneByCondition = DbUtils.getOneByCondition(User.class, sql, connection, username, password);
-        if (oneByCondition != null){
-            // 放行到LoginServlet中给客户端发放cookie，服务器存session
-            filterChain.doFilter(servletRequest,servletResponse);
-        }else {
-            log.error("拦截反馈:用户名或者密码错误");
+        if (username.length()==0 || password.length()==0){
+            log.error("用户名或者密码为空");
+        }else{
+            Connection connection = DruidUtils.getConnection();
+            String sql =  "select * from user where (username=? and password=?)";
+            User oneByCondition = DbUtils.getOneByCondition(User.class, sql, connection, username, password);
+            if (oneByCondition == null){
+                log.error("拦截反馈:用户名或密码不存在");
+            }else{
+                // 放行到LoginServlet中给客户端发放cookie，服务器存session
+                filterChain.doFilter(servletRequest,servletResponse);
+            }
         }
         // filterChain.doFilter(servletRequest,servletResponse);
     }

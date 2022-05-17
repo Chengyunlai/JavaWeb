@@ -35,7 +35,7 @@ public class RegistServlet extends HttpServlet {
         String username = jsonObject.getString("username");
         String password = jsonObject.getString("password");
         System.out.println(username + password);
-        String sql = "insert into user(user_name,password) values(?,?)";
+        String sql = "insert into user(username,password) values(?,?)";
         Connection connection = DbUtils.getMySqlConnection();
         // System.out.println(connection);
         int i = DbUtils.exec(sql, connection, username, password);

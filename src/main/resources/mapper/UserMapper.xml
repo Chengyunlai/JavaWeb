@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.itifrd.mapper.UserMapper">
+    <!-- 它在命名空间 “top.itifrd.mapper.UserMapper” 中定义了一个名为 “selectAll” 的映射语句-->
+    <!--相当于注入sql语句-->
+    <select id="selectAll" resultType="top.itifrd.pojo.User">
+        select * from user;
+    </select>
+
+    <!--<select id="getOneById" resultType="top.itifrd.pojo.User" parameterType="integer">-->
+    <!--    select * from user where id = #{id};-->
+    <!--</select>-->
+</mapper>

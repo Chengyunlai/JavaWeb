@@ -65,7 +65,7 @@ public class DbUtilsTest {
     @Test
     public void getOneByCondition() {
         Connection connection = DbUtils.getMySqlConnection();
-        String sql = "select * from user where (user_name=? and password=?)";
+        String sql = "select * from user where (username=? and password=?)";
         User user = DbUtils.getOneByCondition(User.class, sql, connection, "cengyunlai", "123456");
         if (user!=null){
             System.out.println(true);

@@ -9,8 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="注册路由的重定向">
+    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="修改">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/config/DruidDataSourceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/top/itifrd/mybatisTest/SqlSessionFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fe697494-a87b-4e8a-a5d9-13e58cf3fdab.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fe697494-a87b-4e8a-a5d9-13e58cf3fdab.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/controller/servlet/RegistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/controller/servlet/RegistServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/filter/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/listener/ServletListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/listener/ServletListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DbUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DbUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DruidUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DruidUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/test/DbUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/test/DbUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" afterDir="false" />
     </list>
     <list id="34dee635-99f5-44df-82fb-93a0feba97b9" name="releaseFunction" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,14 +111,16 @@
       <recent name="top.itifrd.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.0.50">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SqlSessionFactoryTest.getSqlSession">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,7 +141,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DbUtilsTest.getOneByCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DbUtilsTest.selectAllData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
@@ -133,54 +151,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="top.itifrd.utils.test" />
       <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.DbUtilsTest" />
-      <option name="METHOD_NAME" value="getOneByCondition" />
+      <option name="METHOD_NAME" value="selectAllData" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DruidUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SqlSessionFactoryTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.itifrd.utils.test.*" />
+          <option name="PATTERN" value="top.itifrd.mybatisTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="top.itifrd.utils.test" />
-      <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.DruidUtilsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DruidUtilsTest.getConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.itifrd.utils.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="top.itifrd.utils.test" />
-      <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.DruidUtilsTest" />
-      <option name="METHOD_NAME" value="getConnection" />
+      <option name="PACKAGE_NAME" value="top.itifrd.mybatisTest" />
+      <option name="MAIN_CLASS_NAME" value="top.itifrd.mybatisTest.SqlSessionFactoryTest" />
+      <option name="METHOD_NAME" value="getAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DruidUtilsTest.selectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SqlSessionFactoryTest.getSqlSession" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.itifrd.utils.test.*" />
+          <option name="PATTERN" value="top.itifrd.mybatisTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="top.itifrd.utils.test" />
-      <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.DruidUtilsTest" />
-      <option name="METHOD_NAME" value="selectAll" />
+      <option name="PACKAGE_NAME" value="top.itifrd.mybatisTest" />
+      <option name="MAIN_CLASS_NAME" value="top.itifrd.mybatisTest.SqlSessionFactoryTest" />
+      <option name="METHOD_NAME" value="getSqlSession" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SqlSessionFactoryTest.getSqlSessionFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.itifrd.mybatisTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.itifrd.mybatisTest" />
+      <option name="MAIN_CLASS_NAME" value="top.itifrd.mybatisTest.SqlSessionFactoryTest" />
+      <option name="METHOD_NAME" value="getSqlSessionFactory" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -275,20 +294,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DruidUtilsTest.selectAll" />
-      <item itemvalue="JUnit.DruidUtilsTest.getConnection" />
-      <item itemvalue="JUnit.DruidUtilsTest" />
       <item itemvalue="JUnit.DbUtilsTest.getMySqlConnection" />
-      <item itemvalue="JUnit.DbUtilsTest.getOneByCondition" />
       <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
+      <item itemvalue="JUnit.SqlSessionFactoryTest.getAll" />
+      <item itemvalue="JUnit.DbUtilsTest.selectAllData" />
+      <item itemvalue="JUnit.SqlSessionFactoryTest.getSqlSessionFactory" />
+      <item itemvalue="JUnit.SqlSessionFactoryTest.getSqlSession" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DbUtilsTest.getOneByCondition" />
-        <item itemvalue="JUnit.DruidUtilsTest.getConnection" />
+        <item itemvalue="JUnit.SqlSessionFactoryTest.getSqlSession" />
+        <item itemvalue="JUnit.SqlSessionFactoryTest.getSqlSessionFactory" />
+        <item itemvalue="JUnit.SqlSessionFactoryTest.getAll" />
+        <item itemvalue="JUnit.DbUtilsTest.selectAllData" />
         <item itemvalue="JUnit.DbUtilsTest.getMySqlConnection" />
-        <item itemvalue="JUnit.DruidUtilsTest.selectAll" />
-        <item itemvalue="JUnit.DruidUtilsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -310,6 +329,7 @@
       <workItem from="1652675994284" duration="520000" />
       <workItem from="1652676533624" duration="8754000" />
       <workItem from="1652694595930" duration="9035000" />
+      <workItem from="1652756941364" duration="13361000" />
     </task>
     <task id="LOCAL-00001" summary="完善JavaWeb基础，加入JDBC">
       <created>1652447413784</created>
@@ -332,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652681705743</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改">
+      <created>1652750379841</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652750379841</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +381,8 @@
     <MESSAGE value="完善JavaWeb基础，加入JDBC" />
     <MESSAGE value="一点点修改，预做持久化登录" />
     <MESSAGE value="注册持久化，登录数据库联动" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册持久化，登录数据库联动" />
+    <MESSAGE value="修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JavaWeb$Tomcat_8_0_50.ic" NAME="Tomcat 8.0.50 Coverage Results" MODIFIED="1652677957510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
