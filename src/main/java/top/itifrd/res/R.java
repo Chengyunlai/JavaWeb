@@ -2,7 +2,7 @@ package top.itifrd.res;
 
 /**
  * @ClassName
- * @Description
+ * @Description 标准响应体
  * @Author:chengyunlai
  * @Date
  * @Version 1.0

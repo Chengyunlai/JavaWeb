@@ -9,16 +9,16 @@
 ***
 ## 项目构建
 1. 你要先这样
-![img_1.png](https://github.com/Chengyunlai/JavaWeb/tree/master/img/img_1.png)
+![img_1.png](https://www.itifrd.top/home/img/mdImg/img_1.png)
 2. 然后再这样
-![img_1.png](https://github.com/Chengyunlai/JavaWeb/tree/master/img/img.png)
+![img_1.png](https://www.itifrd.top/home/img/mdImg/img.png)
 3. 最后要这样
-![img_2.png](https://github.com/Chengyunlai/JavaWeb/tree/master/img/img_2.png)
+![img_2.png](https://www.itifrd.top/home/img/mdImg/img_2.png)
    
 这样的项目内置Tomcat服务器，java的代码和前端的代码都包含在这个工程中，运行时打包成war包即可
 ***
 ## 目录结构
-![img.png](https://github.com/Chengyunlai/JavaWeb/tree/master/img/img_3.png)
+![img.png](https://www.itifrd.top/home/img/mdImg/img_3.png)
 ***
 ## Maven
 Maven最直观的一点就是做到了jar包管理，所以你想使用任何第三方的技术，又不想去网上搜各种jar包自己下载，在Maven工程中，修改**pom.xml**即可
@@ -112,7 +112,9 @@ public class LoginServlet extends HttpServlet {
 
 当你在浏览器输入:`http://www.chengyunlai.top/login` 就表示向服务器发送了一个get请求，而在上述代码中`@WebServlet("/login")` 会匹配到`/login`处理该请求，执行doGet方法
 ***
-
+<i>前言:使用空项目导JAR包的开发方式不再可取，你需要基于Maven的工程,</i>
+<h2>Servlet技术</h2>
+<p></p>
 
 
 
