@@ -85,13 +85,13 @@ HTML代码中的添加JavaScript代码链接以下内容:
 * 补充:CDN网站:`http://staticfile.org/`
 
 #### 使用
-#####作者喜欢的写法
+##### 作者喜欢的写法
 ```javascript
 axios({配置}).then(res=>{res是相应的内容})
 
 配置详见下面 : 请求配置
 ```
-#####例子:
+##### 例子:
 ```javascript
 axios({
   method: 'post',
@@ -110,7 +110,7 @@ responseType:表示浏览器将要响应的数据类型
 res:服务器响应的内容
 ```
 
-#####写法二 : 请求方式别名
+##### 写法二 : 请求方式别名
 ```markdown
 axios.request(config)
 axios.get(url[, config])
@@ -122,7 +122,7 @@ axios.put(url[, data[, config]])
 axios.patch(url[, data[, config]])
 ```
 
-####请求配置
+#### 请求配置
 ```javascript
 {
   // `url` 是用于请求的服务器 URL
@@ -292,7 +292,7 @@ axios.patch(url[, data[, config]])
 ### 技术要点 Servlet
 > Servlet运行在 Web 服务器或应用服务器上的程序;可以读取来自浏览器发送的表单数据或者访问请求,根据请求做相应的逻辑处理后再响应到客户端浏览器
 
-####包配置
+#### 包配置
 ```xml
 <dependency>
     <groupId>javax.servlet</groupId>
@@ -300,7 +300,7 @@ axios.patch(url[, data[, config]])
     <version>3.1.0</version>
 </dependency>  
 ```
-####代码
+#### 代码
 ```java
 package top.itifrd.controller.servlet;
 
@@ -345,7 +345,7 @@ JavaWeb因为是web工程，页面也在工程中，所以访问JavaWeb时自动
 
 ### 技术要点 Json
 > Json作为数据传输的一种方式,是 是存储和交换文本信息的语法
-####示例
+#### 示例
 ```json
 {
     "username":"chengyunlai",
@@ -354,4 +354,4 @@ JavaWeb因为是web工程，页面也在工程中，所以访问JavaWeb时自动
 ```
 都是以键值的方式表示，注意都要用括号包围起来
 
-####使用
+#### 使用
