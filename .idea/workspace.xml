@@ -9,7 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="文档更新" />
+    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="文档更新">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_17_22_53__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_17_22_53__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/MybatisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/MybatisUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/top/itifrd/mybatisTest/SqlSessionFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/top/itifrd/mybatisTest/SqlSessionFactoryTest.java" afterDir="false" />
+    </list>
     <list id="34dee635-99f5-44df-82fb-93a0feba97b9" name="releaseFunction" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,15 +103,13 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.SqlSessionFactoryTest.getSqlSession">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

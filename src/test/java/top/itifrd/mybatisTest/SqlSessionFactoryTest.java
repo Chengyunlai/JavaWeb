@@ -66,11 +66,14 @@ public class SqlSessionFactoryTest {
 
     @Test
     public void getSqlSession(){
-        UserMapper sqlSession = MybatisUtils.getSqlSession(UserMapper.class);
-        List<User> users = sqlSession.selectAll();
+        // UserMapper sqlSession = MybatisUtils.getSqlSession(UserMapper.class);
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        List<User> users = mapper.selectAll();
         for (User user : users) {
             System.out.println(user);
         }
+        sqlSession.close();
     }
 
 
