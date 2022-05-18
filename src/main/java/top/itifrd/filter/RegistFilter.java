@@ -37,6 +37,7 @@ public class RegistFilter implements Filter {
         BufferedReader reader = httpServletRequest.getReader();
         // 将表单的数据转换成 JSON 对象
         JSONObject jsonObject = FilterUtils.formDataToJSONObject(reader);
+        User user = JSON.parseObject(jsonObject.toJSONString(), User.class);
         // 输出 表单数据中 姓名 和 密码 信息
         String username = jsonObject.getString("username");
         String password = jsonObject.getString("password");

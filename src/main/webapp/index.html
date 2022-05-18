@@ -93,7 +93,10 @@ document.getElementById("subm").onclick = function (){
   axios({
     method:"post",
     url:"http://localhost:8080/JavaWeb/login",
-    data:formData
+    data:formData,
+    headers:{
+      'Content-Type': 'application/json'
+    }
   }).then(function (res){
     console.log(res)
   })

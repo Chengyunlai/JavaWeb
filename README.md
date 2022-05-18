@@ -355,3 +355,76 @@ JavaWeb因为是web工程，页面也在工程中，所以访问JavaWeb时自动
 都是以键值的方式表示，注意都要用括号包围起来
 
 #### 使用
+#### 前端表单数据以JSON字符串的格式发送
+##### JSON.stringify()
+* 向服务器发送数据时一般是字符串
+* 该方法是将JavaScript 对象转换为字符串
+
+示例
+```javascript
+// > 解释: 定义了一个对象data,属性有两个
+let data:{
+    username:'',
+    password:''
+}
+
+// > 获取表单数据并且赋值
+data.username = document.getElementById("username").value
+data.password = document.getElementById("password").value
+
+// > 转为json字符串
+let res = JSON.stringify(data)
+
+// > 通过axios发送
+
+axios({
+    method: 'post',
+    url: 'http://www.chengyunlai.top/JavaWeb/login',
+    data:res
+    headers:{
+      'Content-Type': 'application/json'
+    }
+    }).then(res=>{
+        if(res.data.falg == true){console.log("请求成功，我要做一些其他处理")}
+})
+```
+#### 后端接收JSON字符，转换成相应的bean对象
+* `httpServletRequest.getReader()` 获得reader对象（包含着前端发送的请求体中的内容）
+* `reader.readLine()`通过reader对象的readLine方法一行一行的读取，直到null
+* `JSON.parseObject()`读取到的是字符，可以通过这个方法转成JSON对象，可以查键值
+* `JSON.parseObject(jsonObject.toJSONString(), User.class)` 将JSON对象转成字符串并封装成Bean
+```java
+// 定义一个方法类，读取请求体的内容，并将内容转成json对象
+public class JsonUtil {
+    public static JSONObject formDataToJSONObject(BufferedReader formData){
+        System.out.println("接收到表单数据:" + formData);
+        // String result = null;
+        JSONObject jsonObject = null;
+        // 接收来自前端发送来的数据
+        StringBuilder sb = new StringBuilder();
+        try {
+            String res = null;
+            while ((res = formData.readLine())!= null){
+                sb.append(res);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        jsonObject = JSON.parseObject(sb.toString());
+        return jsonObject;
+    }
+}
+
+// 使用
+// 通过getReader方法获取表单的数据
+BufferedReader reader = httpServletRequest.getReader();
+// 将表单的数据转换成 JSON 对象
+JSONObject jsonObject = FilterUtils.formDataToJSONObject(reader);
+// 将内容转成Bean对象，通过JDBC或者Mybatis封存
+User user = JSON.parseObject(jsonObject.toJSONString(), User.class);
+```
+## 前端发过来的数据怎么做持久化
+### JDBC
+### Druid
+### 封装思想
+### Mybatis
