@@ -48,7 +48,8 @@ public class UserMapperTest {
 
     @Test
     public void deleteUserById() {
-        mapper.deleteUserById(1);
+        int i = mapper.deleteUserById(1);
+        System.out.println(i);
     }
 
     @Test

@@ -55,10 +55,10 @@ public class DbUtilsTest {
     @Test
     public void selectAllData() {
         // 给操作的sql语句
-        String sql = "select * from user";
+        String sql = "select * from book";
         // 给操作的连接
         Connection connection = DbUtils.getMySqlConnection();
-        ArrayList<User> all = DbUtils.getAll(User.class,sql, connection);
+        ArrayList<Book> all = DbUtils.getAll(Book.class,sql, connection);
         System.out.println(all);
     }
 

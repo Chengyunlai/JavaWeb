@@ -9,19 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="文档更新">
-      <change afterPath="$PROJECT_DIR$/src/test/java/top/itifrd/mapper/UserMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fe697494-a87b-4e8a-a5d9-13e58cf3fdab.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fe697494-a87b-4e8a-a5d9-13e58cf3fdab.xml" afterDir="false" />
+    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="打包内容修改;mybatis单表的增删改查">
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/mapper/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/mapper/TeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/top/itifrd/mapper/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/top/itifrd/mapper/TeacherMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DbUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DbUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DruidUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DruidUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/MybatisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/MybatisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/test/DbUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/test/DbUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/top/itifrd/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/top/itifrd/mybatisTest/SqlSessionFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/top/itifrd/mybatisTest/SqlSessionFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/top/itifrd/mapper/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/top/itifrd/mapper/UserMapperTest.java" afterDir="false" />
     </list>
     <list id="34dee635-99f5-44df-82fb-93a0feba97b9" name="releaseFunction" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +37,8 @@
         <option value="HTML File" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="Mapper" />
       </list>
     </option>
   </component>
@@ -87,7 +91,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.12390925" />
     <property name="project.structure.side.proportion" value="0.21257484" />
-    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -98,11 +102,11 @@
       <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\src\main\java\top\itifrd" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\src\main\resources\mapper" />
+      <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\src\main\resources\top\itifrd\mapper" />
       <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\src\main\resources" />
-      <recent name="C:\Users\Zhangxy\Desktop\JavaWeb\JavaWeb\img" />
-      <recent name="C:\Users\Zhangxy\Desktop\JavaWeb\JavaWeb" />
-      <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\src\main" />
+      <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\target\classes\top\itifrd\mapper" />
+      <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\src\main\resources\top.itifrd.mapper" />
+      <recent name="C:\Users\12579\Desktop\JavaProject\JavaWeb\src\main\resources\mapper" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -113,7 +117,7 @@
       <recent name="top.itifrd.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserMapperTest.selectAll">
+  <component name="RunManager" selected="JUnit.DbUtilsTest.selectAllData">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -123,6 +127,38 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DbUtilsTest.getMySqlConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.itifrd.utils.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.itifrd.utils.test" />
+      <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.DbUtilsTest" />
+      <option name="METHOD_NAME" value="getMySqlConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DbUtilsTest.selectAllData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.itifrd.utils.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="top.itifrd.utils.test" />
+      <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.DbUtilsTest" />
+      <option name="METHOD_NAME" value="selectAllData" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,7 +179,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.getOneById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserMapperTest.deleteUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
@@ -153,7 +189,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="top.itifrd.mapper" />
       <option name="MAIN_CLASS_NAME" value="top.itifrd.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="getOneById" />
+      <option name="METHOD_NAME" value="deleteUserById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -170,38 +206,6 @@
       <option name="PACKAGE_NAME" value="top.itifrd.mapper" />
       <option name="MAIN_CLASS_NAME" value="top.itifrd.mapper.UserMapperTest" />
       <option name="METHOD_NAME" value="selectAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserMapperTest.selectUserByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.itifrd.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="top.itifrd.mapper" />
-      <option name="MAIN_CLASS_NAME" value="top.itifrd.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="selectUserByUsername" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserMapperTest.updateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaWeb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.itifrd.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="top.itifrd.mapper" />
-      <option name="MAIN_CLASS_NAME" value="top.itifrd.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="updateUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -297,19 +301,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.UserMapperTest.selectAll" />
-      <item itemvalue="JUnit.UserMapperTest.getOneById" />
-      <item itemvalue="JUnit.UserMapperTest.selectUserByUsername" />
-      <item itemvalue="JUnit.UserMapperTest.updateUser" />
       <item itemvalue="JUnit.UserMapperTest.addUser" />
       <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
+      <item itemvalue="JUnit.UserMapperTest.deleteUserById" />
+      <item itemvalue="JUnit.DbUtilsTest.getMySqlConnection" />
+      <item itemvalue="JUnit.DbUtilsTest.selectAllData" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DbUtilsTest.selectAllData" />
+        <item itemvalue="JUnit.DbUtilsTest.getMySqlConnection" />
+        <item itemvalue="JUnit.UserMapperTest.deleteUserById" />
         <item itemvalue="JUnit.UserMapperTest.selectAll" />
         <item itemvalue="JUnit.UserMapperTest.addUser" />
-        <item itemvalue="JUnit.UserMapperTest.updateUser" />
-        <item itemvalue="JUnit.UserMapperTest.selectUserByUsername" />
-        <item itemvalue="JUnit.UserMapperTest.getOneById" />
       </list>
     </recent_temporary>
   </component>
@@ -336,7 +340,7 @@
       <workItem from="1652851596368" duration="14003000" />
       <workItem from="1652879106408" duration="444000" />
       <workItem from="1652920566835" duration="10834000" />
-      <workItem from="1652935853307" duration="1694000" />
+      <workItem from="1652935853307" duration="17907000" />
     </task>
     <task id="LOCAL-00001" summary="完善JavaWeb基础，加入JDBC">
       <created>1652447413784</created>
@@ -394,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652869111300</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="打包内容修改;mybatis单表的增删改查">
+      <created>1652937624667</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652937624667</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +430,8 @@
     <MESSAGE value="修改" />
     <MESSAGE value="Mybatis优化" />
     <MESSAGE value="文档更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="文档更新" />
+    <MESSAGE value="打包内容修改;mybatis单表的增删改查" />
+    <option name="LAST_COMMIT_MESSAGE" value="打包内容修改;mybatis单表的增删改查" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

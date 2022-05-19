@@ -48,6 +48,13 @@ public class MybatisUtils {
     //     return mapper;
     // }
 
+/**
+ * @Description:
+ * @Param: []
+ * @return: org.apache.ibatis.session.SqlSession
+ * @Author: chengyunlai
+ * @Date: 2022/5/19
+ */
     public static SqlSession getSqlSession(){
         return sqlSessionFactory.openSession();
     }

@@ -22,6 +22,7 @@ import java.util.Properties;
  **/
 @Slf4j
 public class DruidUtils {
+
     private static DruidDataSource dataSource = null;
     private static Connection connection = null;
     // 在静态代码块中初始化参数
@@ -29,7 +30,10 @@ public class DruidUtils {
         Properties prop = new Properties();
         InputStream instream = null;
         try {
-            instream = Resources.getResourceAsStream("druid.properties");
+            // instream = Resources.getResourceAsStream("druid.properties");
+            ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
+            instream = systemClassLoader.getResourceAsStream("druid.properties");
+            log.info("获取到输入流:" + instream.toString());
             Boolean flag = (instream == null);
             log.error("使用Resources得到的instream为空:" + flag);
             ClassLoader classLoader = DruidUtils.class.getClassLoader();
