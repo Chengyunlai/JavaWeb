@@ -29,7 +29,7 @@ public class DruidUtils {
         Properties prop = new Properties();
         InputStream instream = null;
         try {
-            instream = Resources.getResourceAsStream("resources/druid.properties");
+            instream = Resources.getResourceAsStream("druid.properties");
             Boolean flag = (instream == null);
             log.error("使用Resources得到的instream为空:" + flag);
             ClassLoader classLoader = DruidUtils.class.getClassLoader();

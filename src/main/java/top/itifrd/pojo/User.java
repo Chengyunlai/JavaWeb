@@ -4,7 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.apache.ibatis.type.Alias;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 /**
@@ -18,9 +20,10 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Alias("user")
 public class User {
-    private Integer id;
-    @NotNull(message = "用户名不能为空")
+    private Integer id = null;
+    @NotBlank(message = "用户名不能为空")
     private String username;
     @NotNull(message = "密码不能为空")
     private String password;
@@ -28,4 +31,10 @@ public class User {
     private String description;
 
 
+    public User(String username, String password, Integer age, String description) {
+        this.username = username;
+        this.password = password;
+        this.age = age;
+        this.description = description;
+    }
 }

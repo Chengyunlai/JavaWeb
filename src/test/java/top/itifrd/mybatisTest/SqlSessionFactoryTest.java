@@ -9,6 +9,7 @@ import top.itifrd.mapper.UserMapper;
 import top.itifrd.pojo.User;
 import top.itifrd.utils.MybatisUtils;
 
+import javax.validation.Valid;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -64,8 +65,9 @@ public class SqlSessionFactoryTest {
         System.out.println(sqlSessionFactory2);
     }
 
+
     @Test
-    public void getSqlSession(){
+    public void getSqlSessionAndSelectAll(){
         // UserMapper sqlSession = MybatisUtils.getSqlSession(UserMapper.class);
         SqlSession sqlSession = MybatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
@@ -74,6 +76,17 @@ public class SqlSessionFactoryTest {
             System.out.println(user);
         }
         sqlSession.close();
+    }
+
+    @Test
+    public void update(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        User user = new User(11,"chengyunlai","1231",15,"person");
+        System.out.println(user);
+        int i = mapper.updateUser(user);
+        sqlSession.commit();
+        System.out.println(i);
     }
 
 

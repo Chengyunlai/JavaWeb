@@ -3,13 +3,40 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="top.itifrd.mapper.UserMapper">
+    <insert id="addUser">
+        insert into user (username, password, description, age) VALUES (#{user.username},#{user.password},#{user.description},#{user.age})
+
+    </insert>
+
+    <update id="updateUser">
+        update user
+        <set>
+            <if test="user.username != null and user.username != ''">
+                username = #{user.username},
+            </if>
+            <if test="user.password != null and user.password != ''">
+                password = #{user.password},
+            </if>
+            <if test="user.description != null and user.description != ''">
+                description = #{user.description},
+            </if>
+            <if test="user.age != null and user.age != ''">
+                age = #{user.age}
+            </if>
+        </set>
+        <where>
+            <if test="user.id != null">
+                id = #{user.id};
+            </if>
+        </where>
+    </update>
+
+    <delete id="deleteUserById">
+        delete from user where id = #{id};
+    </delete>
     <!-- 它在命名空间 “top.itifrd.mapper.UserMapper” 中定义了一个名为 “selectAll” 的映射语句-->
     <!--相当于注入sql语句-->
-    <select id="selectAll" resultType="top.itifrd.pojo.User">
+    <select id="selectAll" resultType="user">
         select * from user;
     </select>
-
-    <!--<select id="getOneById" resultType="top.itifrd.pojo.User" parameterType="integer">-->
-    <!--    select * from user where id = #{id};-->
-    <!--</select>-->
 </mapper>

@@ -801,351 +801,410 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Collation>latin1_bin</Collation>
     </table>
     <table id="243" parent="2" name="role_of_user"/>
-    <table id="244" parent="2" name="user"/>
-    <table id="245" parent="2" name="user_role_connect"/>
-    <table id="246" parent="2" name="user_sign"/>
-    <column id="247" parent="238" name="id">
+    <table id="244" parent="2" name="student"/>
+    <table id="245" parent="2" name="teacher"/>
+    <table id="246" parent="2" name="user"/>
+    <table id="247" parent="2" name="user_role_connect"/>
+    <table id="248" parent="2" name="user_sign"/>
+    <column id="249" parent="238" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="248" parent="238" name="type">
+    <column id="250" parent="238" name="type">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_general_ci</Collation>
     </column>
-    <column id="249" parent="238" name="name">
+    <column id="251" parent="238" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_general_ci</Collation>
     </column>
-    <column id="250" parent="238" name="description">
+    <column id="252" parent="238" name="description">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_general_ci</Collation>
     </column>
-    <key id="251" parent="238" name="PRIMARY">
+    <key id="253" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="252" parent="239" name="id">
+    <column id="254" parent="239" name="id">
       <Position>1</Position>
       <DataType>int(32)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="253" parent="239" name="img_username">
+    <column id="255" parent="239" name="img_username">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="254" parent="239" name="img_key">
+    <column id="256" parent="239" name="img_key">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="255" parent="239" name="img_input_date">
+    <column id="257" parent="239" name="img_input_date">
       <Position>4</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="256" parent="239" name="img_receive_date">
+    <column id="258" parent="239" name="img_receive_date">
       <Position>5</Position>
       <DataType>date|0s</DataType>
     </column>
-    <column id="257" parent="239" name="img_receive_name">
+    <column id="259" parent="239" name="img_receive_name">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="258" parent="239" name="img_data_status">
+    <column id="260" parent="239" name="img_data_status">
       <Position>7</Position>
       <DataType>bit(1)|0s</DataType>
     </column>
-    <key id="259" parent="239" name="PRIMARY">
+    <key id="261" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="260" parent="240" name="index">
+    <column id="262" parent="240" name="index">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="261" parent="240" name="type">
+    <column id="263" parent="240" name="type">
       <Position>2</Position>
       <Comment>标签大类名称</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="262" parent="240" name="location">
+    <column id="264" parent="240" name="location">
       <Position>3</Position>
       <Comment>标明地点</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="263" parent="240" name="goods_id">
+    <column id="265" parent="240" name="goods_id">
       <Position>4</Position>
       <Comment>设备编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="264" parent="240" name="name">
+    <column id="266" parent="240" name="name">
       <Position>5</Position>
       <Comment>设备名称</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="265" parent="240" name="type_number">
+    <column id="267" parent="240" name="type_number">
       <Position>6</Position>
       <Comment>标签大类名称16进制编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="266" parent="240" name="location_number">
+    <column id="268" parent="240" name="location_number">
       <Position>7</Position>
       <Comment>地点名称16进制编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="267" parent="240" name="id_number">
+    <column id="269" parent="240" name="id_number">
       <Position>8</Position>
       <Comment>id编号16进制编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="268" parent="240" name="name_number">
+    <column id="270" parent="240" name="name_number">
       <Position>9</Position>
       <Comment>设备名称16进制编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <key id="269" parent="240" name="PRIMARY">
+    <key id="271" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>index</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="270" parent="241" name="index">
+    <column id="272" parent="241" name="index">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="271" parent="241" name="type">
+    <column id="273" parent="241" name="type">
       <Position>2</Position>
       <Comment>标签大类名称</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="272" parent="241" name="location">
+    <column id="274" parent="241" name="location">
       <Position>3</Position>
       <Comment>标明地点</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="273" parent="241" name="id">
+    <column id="275" parent="241" name="id">
       <Position>4</Position>
       <Comment>设备编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="274" parent="241" name="name">
+    <column id="276" parent="241" name="name">
       <Position>5</Position>
       <Comment>设备名称</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="275" parent="241" name="type_number">
+    <column id="277" parent="241" name="type_number">
       <Position>6</Position>
       <Comment>标签大类名称16进制编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="276" parent="241" name="location_number">
+    <column id="278" parent="241" name="location_number">
       <Position>7</Position>
       <Comment>地点名称16进制编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="277" parent="241" name="id_number">
+    <column id="279" parent="241" name="id_number">
       <Position>8</Position>
       <Comment>id编号16进制编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="278" parent="241" name="name_number">
+    <column id="280" parent="241" name="name_number">
       <Position>9</Position>
       <Comment>设备名称16进制编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <key id="279" parent="241" name="PRIMARY">
+    <key id="281" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>index</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="280" parent="242" name="index">
+    <column id="282" parent="242" name="index">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="281" parent="242" name="type">
+    <column id="283" parent="242" name="type">
       <Position>2</Position>
       <Comment>标签大类名称</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="282" parent="242" name="location">
+    <column id="284" parent="242" name="location">
       <Position>3</Position>
       <Comment>标明地点</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="283" parent="242" name="id">
+    <column id="285" parent="242" name="id">
       <Position>4</Position>
       <Comment>设备编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="284" parent="242" name="name">
+    <column id="286" parent="242" name="name">
       <Position>5</Position>
       <Comment>设备名称</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="285" parent="242" name="type_number">
+    <column id="287" parent="242" name="type_number">
       <Position>6</Position>
       <Comment>标签大类名称16进制编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="286" parent="242" name="location_number">
+    <column id="288" parent="242" name="location_number">
       <Position>7</Position>
       <Comment>地点名称16进制编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="287" parent="242" name="id_number">
+    <column id="289" parent="242" name="id_number">
       <Position>8</Position>
       <Comment>id编号16进制编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="288" parent="242" name="name_number">
+    <column id="290" parent="242" name="name_number">
       <Position>9</Position>
       <Comment>设备名称16进制编号</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <key id="289" parent="242" name="PRIMARY">
+    <key id="291" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>index</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="290" parent="243" name="id">
+    <column id="292" parent="243" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="291" parent="243" name="role_desc">
+    <column id="293" parent="243" name="role_desc">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_bin</Collation>
     </column>
-    <key id="292" parent="243" name="PRIMARY">
+    <key id="294" parent="243" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="293" parent="244" name="id">
+    <column id="295" parent="244" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="294" parent="244" name="username">
+    <column id="296" parent="244" name="student_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_general_ci</Collation>
     </column>
-    <column id="295" parent="244" name="password">
+    <column id="297" parent="244" name="student_password">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <Collation>utf8_general_ci</Collation>
+    </column>
+    <column id="298" parent="244" name="teacher_id">
+      <Position>4</Position>
+      <DataType>int(255)|0s</DataType>
+    </column>
+    <index id="299" parent="244" name="teacher_id">
+      <ColNames>teacher_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="300" parent="244" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="301" parent="244" name="student_ibfk_1">
+      <ColNames>teacher_id</ColNames>
+      <RefTableName>teacher</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="302" parent="245" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="303" parent="245" name="teacher_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <Collation>utf8_general_ci</Collation>
+    </column>
+    <column id="304" parent="245" name="teacher_password">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <Collation>utf8_general_ci</Collation>
+    </column>
+    <key id="305" parent="245" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="306" parent="246" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="307" parent="246" name="username">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <Collation>utf8_general_ci</Collation>
+    </column>
+    <column id="308" parent="246" name="password">
       <Position>3</Position>
       <DataType>varchar(11)|0s</DataType>
       <Collation>utf8_general_ci</Collation>
     </column>
-    <column id="296" parent="244" name="description">
+    <column id="309" parent="246" name="description">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <Collation>utf8_general_ci</Collation>
     </column>
-    <column id="297" parent="244" name="age">
+    <column id="310" parent="246" name="age">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
     </column>
-    <key id="298" parent="244" name="PRIMARY">
+    <key id="311" parent="246" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="299" parent="245" name="user_sign_id">
+    <column id="312" parent="247" name="user_sign_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="300" parent="245" name="role_of_user_id">
+    <column id="313" parent="247" name="role_of_user_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="301" parent="245" name="user_sign_id">
+    <index id="314" parent="247" name="user_sign_id">
       <ColNames>user_sign_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="302" parent="245" name="role_of_user_id">
+    <index id="315" parent="247" name="role_of_user_id">
       <ColNames>role_of_user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="303" parent="245" name="user_role_connect_ibfk_1">
+    <foreign-key id="316" parent="247" name="user_role_connect_ibfk_1">
       <ColNames>user_sign_id</ColNames>
       <RefTableName>user_sign</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="304" parent="245" name="user_role_connect_ibfk_2">
+    <foreign-key id="317" parent="247" name="user_role_connect_ibfk_2">
       <ColNames>role_of_user_id</ColNames>
       <RefTableName>role_of_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="305" parent="246" name="id">
+    <column id="318" parent="248" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="306" parent="246" name="user_username">
+    <column id="319" parent="248" name="user_username">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Collation>utf8_bin</Collation>
     </column>
-    <column id="307" parent="246" name="user_password">
+    <column id="320" parent="248" name="user_password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="308" parent="246" name="user_username_UNIQUE">
+    <index id="321" parent="248" name="user_username_UNIQUE">
       <ColNames>user_username</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="309" parent="246" name="PRIMARY">
+    <key id="322" parent="248" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="310" parent="246" name="user_username_UNIQUE">
+    <key id="323" parent="248" name="user_username_UNIQUE">
       <ColNames>user_username</ColNames>
       <UnderlyingIndexName>user_username_UNIQUE</UnderlyingIndexName>
     </key>
