@@ -9,9 +9,9 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Student {
+public class Pet {
   private Integer id;
-  private String studentName;
-  private String idCard;
-  private Info info;
+  private String petName;
+  private long personId;
+  private Person person;
 }

@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper
-        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="top.itifrd.mapper.StudentMapper">
+    <resultMap id="totalStudent" type="student">
+        <id column="id" property="id"></id>
+        <result column="student_name" property="studentName"></result>
+        <result column="id_card" property="idCard"></result>
 
-    <select id="getStudent" resultType="top.itifrd.pojo.Student"></select>
+        <association property="info" javaType="info">
+            <id column="id" property="id"></id>
+            <result column="info" property="info"></result>
+        </association>
+    </resultMap>
+    <!--select * from student s,info i  WHERE s.id_card = i.student_id_card;-->
+    <select id="getAllStudent" resultMap="totalStudent">
+        select * from student s,info i  WHERE s.id_card = i.student_id_card;
+    </select>
+
+    <!--select * from student s,info i  WHERE s.id_card = i.student_id_card AND s.id_card='330127199808110000';-->
+    <select id="selectById" resultMap="totalStudent">
+        select * from student s,info i  WHERE s.id_card = i.student_id_card AND s.id_card=#{id};
+    </select>
 </mapper>

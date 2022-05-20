@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="top.itifrd.mapper.PersonMapper">
+    <resultMap id="allPerson" type="person">
+        <id column="id" property="id"></id>
+        <result column="person_name" property="personName"></result>
+        <collection property="pet" ofType="pet">
+            <id column="pt.id" property="id"></id>
+            <result column="pet_name" property="petName"></result>
+            <result column="person_id" property="personId"></result>
+        </collection>
+    </resultMap>
+    
+    <select id="getPersonAndPet" resultMap="allPerson">
+        select * from person ps,pet pt where ps.id = pt.person_id;
+    </select>
+</mapper>
