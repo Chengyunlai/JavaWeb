@@ -287,8 +287,6 @@ axios.patch(url[, data[, config]])
 }
 ```
 
-***
-
 ### 技术要点 Servlet
 > Servlet运行在 Web 服务器或应用服务器上的程序;可以读取来自浏览器发送的表单数据或者访问请求,根据请求做相应的逻辑处理后再响应到客户端浏览器
 
@@ -340,8 +338,6 @@ public class LoginServlet extends HttpServlet {
 JavaWeb因为是web工程，页面也在工程中，所以访问JavaWeb时自动定位到webapp根目录
 
 当你在浏览器输入:`http://www.chengyunlai.top/JavaWeb/login` 就表示向服务器发送了一个get请求，而在上述代码中`@WebServlet("/login")` 会匹配到`/login`处理该请求，执行doGet方法
-
-***
 
 ### 技术要点 Json
 > Json作为数据传输的一种方式,是 是存储和交换文本信息的语法

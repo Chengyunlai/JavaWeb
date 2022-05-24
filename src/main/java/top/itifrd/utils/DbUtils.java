@@ -53,7 +53,7 @@ public class DbUtils {
                 for (int i = 1; i <= columnCount; i++) {
                     // 获取列名
                     String columnName = metaData.getColumnName(i);
-                    // 通过列名获取元素
+                    // 通过列名获取值
                     Object object = resultSet.getObject(columnName);
                     // 通过反射获取该类的属性
                     Field field = clazz.getDeclaredField(columnName);

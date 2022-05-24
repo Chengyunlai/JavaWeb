@@ -6,13 +6,18 @@
     <!--属性可以在外部进行配置，使xml文件中可以读取到properties中的数据，并在整个配置文件中用来替换需要动态配置的属性值-->
     <properties resource="druid.properties"></properties>
 
-    <!--改变 MyBatis 的运行时行为-->
+
     <settings>
-        <!--是否开启驼峰命名自动映射，即从经典数据库列名 A_COLUMN 映射到经典 Java 属性名 aColumn。-->
-        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--指定 MyBatis 所用日志的具体实现-->
         <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <!--开启数据库名称和类名驼峰映射-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
 
+    <!--类型别名配合注解开发-->
+    <typeAliases>
+        <package name="top.itifrd.pojo"/>
+    </typeAliases>
     <!--MyBatis 可以配置成适应多种环境，这种机制有助于将 SQL 映射应用于多种数据库之中， 现实情况下有多种理由需要这么做。例如，开发、测试和生产环境需要有不同的配置；或者想在具有相同 Schema 的多个生产数据库中使用相同的 SQL 映射。还有许多类似的使用场景。-->
     <environments default="development">
         <environment id="development">
@@ -28,6 +33,6 @@
 
     </environments>
     <mappers>
-        <mapper resource="mapper/UserMapper.xml" />
+        <package name="top.itifrd.mapper"/>
     </mappers>
 </configuration>

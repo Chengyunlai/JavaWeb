@@ -3,6 +3,7 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import top.itifrd.pojo.User;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -19,4 +20,12 @@ public interface UserMapper {
     User getOneById(@Param("id") Integer id);
     @Select("select count(*) from user where username = #{username}")
     Integer selectUserByUsername(@Param("username") String username);
+
+    // 用到接收的内容都要 user打头
+    int updateUser(@Param("user")User user);
+
+    int deleteUserById(@Param("id") Integer id);
+
+    int addUser(@Param("user")User user);
+
 }

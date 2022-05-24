@@ -21,7 +21,7 @@ public class MybatisUtils {
 
     static {
         try {
-            InputStream instream = Resources.getResourceAsStream("resources/mybatis-config.xml");
+            InputStream instream = Resources.getResourceAsStream("mybatis-config.xml");
             sqlSessionFactory = new SqlSessionFactoryBuilder().build(instream);
         } catch (IOException e) {
             e.printStackTrace();
@@ -48,6 +48,13 @@ public class MybatisUtils {
     //     return mapper;
     // }
 
+/**
+ * @Description:
+ * @Param: []
+ * @return: org.apache.ibatis.session.SqlSession
+ * @Author: chengyunlai
+ * @Date: 2022/5/19
+ */
     public static SqlSession getSqlSession(){
         return sqlSessionFactory.openSession();
     }

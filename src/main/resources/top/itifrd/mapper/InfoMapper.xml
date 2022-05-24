@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="top.itifrd.mapper.InfoMapper">
+    <resultMap id="information" type="info">
+        <id column="id" property="id"></id>
+        <result column="student_id_card" property="studentIdCard"></result>
+        <result column="info" property="info"></result>
+
+        <association property="student" javaType="student">
+            <id column="id" property="id"></id>
+            <result column="student_name" property="studentName"></result>
+            <result column="id_card" property="idCard"></result>
+        </association>
+    </resultMap>
+    <!--select * from info i,student s where i.student_id_card = s.id_card AND i.student_id_card='330127199808110000';-->
+    <select id="selectByIdCard" resultMap="information">
+        select * from info i,student s where i.student_id_card = s.id_card AND i.student_id_card=#{id};
+    </select>
+</mapper>

@@ -83,35 +83,10 @@
       <artifactId>mybatis</artifactId>
       <version>3.5.7</version>
     </dependency>
-
-    <!--        swagger3-->
-    <dependency>
-      <groupId>io.springfox</groupId>
-      <artifactId>springfox-boot-starter</artifactId>
-      <version>3.0.0</version>
-    </dependency>
-    <!--        swagger3-->
   </dependencies>
 
   <build>
-    <resources>
-      <resource>
-        <directory>src/main/java</directory><!--所在目录-->
-        <includes>
-          <include>**/*.properties</include>
-          <include>**/*.xml</include>
-        </includes>
-        <filtering>false</filtering>
-      </resource>
-      <resource>
-        <directory>src/main</directory><!--所在目录-->
-        <includes>
-          <include>**/*.properties</include>
-          <include>**/*.xml</include>
-        </includes>
-        <filtering>false</filtering>
-      </resource>
-    </resources>
+
     <finalName>JavaWeb</finalName>
   </build>
 </project>
