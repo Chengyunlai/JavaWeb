@@ -421,6 +421,12 @@ User user = JSON.parseObject(jsonObject.toJSONString(), User.class);
 ```
 ## 前端发过来的数据怎么做持久化
 ### JDBC
+是指JAVA针对数据库连接设定的一套**接口**;该接口的实现类由其他做数据库的厂商去实现。
+以Mysql为例子
+### 导包
+```xml
+
+```
 ### Druid
 ### 封装思想
 ### Mybatis
