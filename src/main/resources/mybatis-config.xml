@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <!--属性可以在外部进行配置，使xml文件中可以读取到properties中的数据，并在整个配置文件中用来替换需要动态配置的属性值-->
-    <properties resource="druid.properties"></properties>
+    <!--<properties resource="druid.properties"></properties>-->
 
 
     <settings>
@@ -24,9 +24,9 @@
             <transactionManager type="JDBC"/>
             <dataSource type="top.itifrd.config.DruidDataSourceFactory">
                 <!--url,username,password将会由druid.properties中设置的相应值来替换-->
-                <property name="url" value="${url}"/>
-                <property name="username" value="${username}"/>
-                <property name="password" value="${password}"/>
+                <!--<property name="url" value="${url}"/>-->
+                <!--<property name="username" value="${username}"/>-->
+                <!--<property name="password" value="${password}"/>-->
             </dataSource>
         </environment>
 

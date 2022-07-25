@@ -9,25 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="预做多表查询的Mybatis中的配置;JDBC封装类中使用了类加载器，而不是mybatis的读取方法">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/mapper/InfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/mapper/PersonMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/mapper/PetMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/top/itifrd/mapper/InfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/top/itifrd/mapper/PersonMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/top/itifrd/mapper/PetMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/top/itifrd/mapper/InfoMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/top/itifrd/mapper/PersonMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/top/itifrd/mapper/PetMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/top/itifrd/mapper/StudentMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fe697494-a87b-4e8a-a5d9-13e58cf3fdab.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fe697494-a87b-4e8a-a5d9-13e58cf3fdab.xml" afterDir="false" />
+    <list default="true" id="1c612173-4139-405b-b055-02b098d30701" name="Default Changelist" comment="Mybatis的多表查询">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_13_22_48_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_13_22_48__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_14_18_56_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_14_18_56__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_15_19_01_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_15_19_01__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_15_23_19_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_15_23_19__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_16_22_45_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_16_22_45__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_17_22_53_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_17_22_53__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_17_8_21_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_17_8_21__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_18_8_47_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_5_18_8_47__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/mapper/StudentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/mapper/TeacherMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/pojo/Teacher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/top/itifrd/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/top/itifrd/mapper/StudentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/top/itifrd/mapper/TeacherMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DbUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/itifrd/utils/DbUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <list id="34dee635-99f5-44df-82fb-93a0feba97b9" name="releaseFunction" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,9 +95,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/top/itifrd/pojo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.12390925" />
     <property name="project.structure.side.proportion" value="0.21257484" />
     <property name="settings.editor.selected.configurable" value="SQL Dialects" />
@@ -123,29 +126,18 @@
       <recent name="top.itifrd.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PetMapperTest.getPetInfoByName">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InfoMapperTest.selectByIdCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DbUtilsTest.selectAllData">
+    <configuration name="DbUtilsTest.selectAllData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.itifrd.mapper.*" />
+          <option name="PATTERN" value="top.itifrd.utils.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="top.itifrd.mapper" />
-      <option name="MAIN_CLASS_NAME" value="top.itifrd.mapper.InfoMapperTest" />
-      <option name="METHOD_NAME" value="selectByIdCard" />
+      <option name="PACKAGE_NAME" value="top.itifrd.utils.test" />
+      <option name="MAIN_CLASS_NAME" value="top.itifrd.utils.test.DbUtilsTest" />
+      <option name="METHOD_NAME" value="selectAllData" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -183,33 +175,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentMapperTest.getAllStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SqlSessionFactoryTest.getSqlSessionAndSelectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.itifrd.mapper.*" />
+          <option name="PATTERN" value="top.itifrd.mybatisTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="top.itifrd.mapper" />
-      <option name="MAIN_CLASS_NAME" value="top.itifrd.mapper.StudentMapperTest" />
-      <option name="METHOD_NAME" value="getAllStudent" />
+      <option name="PACKAGE_NAME" value="top.itifrd.mybatisTest" />
+      <option name="MAIN_CLASS_NAME" value="top.itifrd.mybatisTest.SqlSessionFactoryTest" />
+      <option name="METHOD_NAME" value="getSqlSessionAndSelectAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentMapperTest.selectById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SqlSessionFactoryTest.getSqlSessionFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaWeb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="top.itifrd.mapper.*" />
+          <option name="PATTERN" value="top.itifrd.mybatisTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="top.itifrd.mapper" />
-      <option name="MAIN_CLASS_NAME" value="top.itifrd.mapper.StudentMapperTest" />
-      <option name="METHOD_NAME" value="selectById" />
+      <option name="PACKAGE_NAME" value="top.itifrd.mybatisTest" />
+      <option name="MAIN_CLASS_NAME" value="top.itifrd.mybatisTest.SqlSessionFactoryTest" />
+      <option name="METHOD_NAME" value="getSqlSessionFactory" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -220,7 +212,7 @@
       <deployment>
         <artifact name="JavaWeb:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/JavaWeb" />
+            <option name="CONTEXT_PATH" value="/JavaWeb_war" />
           </settings>
         </artifact>
       </deployment>
@@ -304,20 +296,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
-      <item itemvalue="JUnit.StudentMapperTest.getAllStudent" />
-      <item itemvalue="JUnit.StudentMapperTest.selectById" />
-      <item itemvalue="JUnit.InfoMapperTest.selectByIdCard" />
       <item itemvalue="JUnit.PersonMapperTest.getPersonAndPet" />
       <item itemvalue="JUnit.PetMapperTest.getPetInfoByName" />
+      <item itemvalue="JUnit.SqlSessionFactoryTest.getSqlSessionFactory" />
+      <item itemvalue="JUnit.SqlSessionFactoryTest.getSqlSessionAndSelectAll" />
+      <item itemvalue="JUnit.DbUtilsTest.selectAllData" />
+      <item itemvalue="Tomcat Server.Tomcat 8.0.50" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DbUtilsTest.selectAllData" />
+        <item itemvalue="JUnit.SqlSessionFactoryTest.getSqlSessionAndSelectAll" />
+        <item itemvalue="JUnit.SqlSessionFactoryTest.getSqlSessionFactory" />
         <item itemvalue="JUnit.PetMapperTest.getPetInfoByName" />
         <item itemvalue="JUnit.PersonMapperTest.getPersonAndPet" />
-        <item itemvalue="JUnit.InfoMapperTest.selectByIdCard" />
-        <item itemvalue="JUnit.StudentMapperTest.selectById" />
-        <item itemvalue="JUnit.StudentMapperTest.getAllStudent" />
       </list>
     </recent_temporary>
   </component>
@@ -345,7 +337,12 @@
       <workItem from="1652879106408" duration="444000" />
       <workItem from="1652920566835" duration="10834000" />
       <workItem from="1652935853307" duration="18572000" />
-      <workItem from="1653008461016" duration="19586000" />
+      <workItem from="1653008461016" duration="20208000" />
+      <workItem from="1653200642868" duration="2878000" />
+      <workItem from="1653373767873" duration="7130000" />
+      <workItem from="1653438543950" duration="3073000" />
+      <workItem from="1653526424974" duration="970000" />
+      <workItem from="1658754520163" duration="4434000" />
     </task>
     <task id="LOCAL-00001" summary="完善JavaWeb基础，加入JDBC">
       <created>1652447413784</created>
@@ -417,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652965788800</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Mybatis的多表查询">
+      <created>1653046452822</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1653046452822</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +448,19 @@
     <MESSAGE value="文档更新" />
     <MESSAGE value="打包内容修改;mybatis单表的增删改查" />
     <MESSAGE value="预做多表查询的Mybatis中的配置;JDBC封装类中使用了类加载器，而不是mybatis的读取方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="预做多表查询的Mybatis中的配置;JDBC封装类中使用了类加载器，而不是mybatis的读取方法" />
+    <MESSAGE value="Mybatis的多表查询" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mybatis的多表查询" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/top/itifrd/utils/MybatisUtils.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

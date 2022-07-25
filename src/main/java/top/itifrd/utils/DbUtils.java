@@ -40,7 +40,7 @@ public class DbUtils {
         ArrayList<E> arrayList = new ArrayList<>();
         try {
             // 通过反射得到实例对象
-            E e = clazz.newInstance();
+            E e;
             preparedStatement = DbUtils.getPreparedStatement(sql, connection);
             ResultSet resultSet = preparedStatement.executeQuery();
             // 获取表的结构
@@ -49,6 +49,7 @@ public class DbUtils {
             // 获取数据的字段数
             int columnCount = metaData.getColumnCount();
             while (resultSet.next()){
+                e = clazz.newInstance();
                 // 每行对象封装
                 for (int i = 1; i <= columnCount; i++) {
                     // 获取列名
